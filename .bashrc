@@ -1,4 +1,12 @@
+#--------------------------------------------
+# Git
+#--------------------------------------------
+git config --global alias.ci 'commit -m'
+git config --global alias.ch 'checkout'
 
+#--------------------------------------------
+# Node Package Manager Aliases
+#--------------------------------------------
 detect_package_manager() {
   if [ -f "yarn.lock" ]; then
     echo "yarn"
