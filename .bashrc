@@ -1,8 +1,13 @@
 #--------------------------------------------
 # Git
 #--------------------------------------------
-git config --global alias.ci 'commit -m'
-git config --global alias.ch 'checkout'
+alias p='git pull'
+alias pp='git push'
+alias ci='commit -m '
+alias chb='git checkout -b '
+alias ch='git checkout '
+alias h='git checkout main || git checkout master'
+alias s='git switch -'
 
 #--------------------------------------------
 # Node Package Manager Aliases
