@@ -1,4 +1,19 @@
 #--------------------------------------------
+# Directory Management
+#--------------------------------------------
+
+# Create a new directory and step into it
+mkcd() {
+    mkdir -p -- "$1" && cd -- "$1"
+}
+
+# Create a new directory and step into it
+mkcode() {
+    mkdir -p -- "$1" && code -- "$1"
+}
+
+
+#--------------------------------------------
 # Git
 #--------------------------------------------
 alias p='git pull'
