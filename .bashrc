@@ -23,7 +23,7 @@ detect_package_manager() {
     echo "npm"
 
   else
-    echo "npm"
+    echo "pnpm"
   fi
 }
 
