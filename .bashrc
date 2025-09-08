@@ -12,17 +12,23 @@ mkcode() {
     mkdir -p -- "$1" && code -- "$1"
 }
 
+#--------------------------------------------
+# Process Management
+#--------------------------------------------
+alias kp='npx kill-port'
+
 
 #--------------------------------------------
 # Git
 #--------------------------------------------
-alias p='git pull'
-alias pp='git push'
-alias ci='git commit -m '
-alias chb='git checkout -b '
-alias ch='git checkout '
-alias h='git checkout main || git checkout master'
-alias s='git switch -'
+alias gpl='git pull'
+alias gp='git push'
+alias gci='git commit -m '
+alias gchb='git checkout -b '
+alias gch='git checkout '
+alias ggh='git checkout main || git checkout master'
+alias gs='git switch -'
+alias glog='git log --oneline'
 
 #--------------------------------------------
 # Node Package Manager Aliases
