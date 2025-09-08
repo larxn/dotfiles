@@ -129,3 +129,19 @@ b() {
             ;;
     esac
 }
+
+# Run storybook script
+sb() {
+    local pm=$(detect_package_manager)
+    case $pm in
+        "yarn")
+            yarn storybook
+            ;;
+        "pnpm")
+            pnpm storybook
+            ;;
+        "npm")
+            npm run storybook
+            ;;
+    esac
+}
