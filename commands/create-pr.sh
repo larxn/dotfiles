@@ -95,12 +95,7 @@ main() {
         base_url="https://$site"
     else
         print_warning "Could not get site from auth status. Trying API response..."
-        base_url=$(jq -r '.self // empty' "$ticket_data_file" 2>/dev/null | sed 's|/rest/api/.*||')
-
-        if [ -z "$base_url" ] || [ "$base_url" = "null" ]; then
-            print_error "Could not determine Jira base URL. Please check your Atlassian CLI authentication."
-            exit 1
-        fi
+        base_url="company.atlassian.net"
     fi
 
     local ticket_url="${base_url}/browse/${ticket_id}"
