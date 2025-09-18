@@ -88,7 +88,7 @@ main() {
     print_info "Ticket name: $ticket_name"
 
     # Extract base URL for ticket link - try auth status first
-    local site=$(acli jira auth status 2>/dev/null | grep "Site:" | sed 's/.*Site: //')
+    local site=$(acli jira auth status 2>/dev/null | grep -a "Site:" | sed 's/.*Site: //')
     local base_url=""
 
     if [ -n "$site" ]; then
