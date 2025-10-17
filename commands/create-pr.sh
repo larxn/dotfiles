@@ -117,10 +117,6 @@ main() {
     local pr_body="## Ticket
 - [${ticket_name}](${ticket_url})
 
-## Description
-
--
-
 ## Relevant pages
 
 -
